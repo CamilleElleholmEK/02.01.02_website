@@ -1,0 +1,285 @@
+/*********** Phones *************/
+
+@media (max-width: 768px) {
+  main {
+    padding: 2em;
+    max-width: 768px;
+    width: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  main h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  main h2 {
+    font-weight: 500;
+  }
+
+  main h3 {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #041626;
+    font-style: italic;
+  }
+
+  main p {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 0.5em;
+    width: auto;
+    max-width: 500px;
+    margin-bottom: 0.5em;
+  }
+
+  main a {
+    margin-bottom: 0.5em;
+    padding: 0.4em;
+  }
+
+  dl {
+    margin-top: 0.3em;
+    width: auto;
+    max-width: 500px;
+  }
+  dt {
+    padding: 1.5%;
+    font-weight: 500;
+  }
+  dd {
+    padding: 1.5%;
+  }
+
+  main img {
+    max-width: 500px;
+  }
+
+  #cutout {
+    max-width: 500px;
+  }
+  hr {
+    display: none;
+  }
+}
+/*********** Laptops and above *************/
+
+@media (min-width: 769px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    line-height: 1.5;
+  }
+
+  /** Index **/
+
+  section.grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .intro {
+    grid-column: 1/2;
+    /* width: 550px; */
+  }
+  #cutout {
+    grid-column: 2/3;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .order {
+    order: -1;
+    margin-top: 60px;
+  }
+  dl {
+    border: none;
+  }
+  dd {
+    margin-top: 4px;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+  dt {
+    border: solid #06131e 2px;
+    border-radius: 5px;
+    width: 200px;
+    padding: 3px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .personlig {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10px;
+  }
+  .windows {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 10px;
+  }
+  .tablet {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 10px;
+  }
+  .smartphone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10px;
+  }
+
+  .dl-text {
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  .intro p {
+    margin-bottom: 30px;
+  }
+
+  .intro a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /** Min computer **/
+
+  .specs {
+    margin-left: 20px;
+    width: 410px;
+  }
+
+  /** Operativsystemer **/
+
+  .grid_5-3 {
+    grid-template-columns: 5fr 3fr;
+    display: grid;
+    padding: 1em;
+  }
+
+  .grid_5-3 .mac-windows {
+    grid-column: 1/2;
+  }
+
+  .mac-windows .grid_2-3 {
+    grid-template-columns: 2fr 3fr;
+    display: grid;
+  }
+
+  .grid_2-3 .mac-hund {
+    grid-column: 1/2;
+  }
+
+  .grid_2-3 .mac-text {
+    grid-column: 2/3;
+  }
+
+  .mac-windows .grid_3-2 {
+    grid-template-columns: 3fr 2fr;
+    display: grid;
+  }
+
+  .grid_5-3 .tablets-mobiler {
+    grid-column: 2/3;
+  }
+
+  .windows-pic {
+    margin-top: 60px;
+  }
+
+  .mac-hund,
+  .windows-pic,
+  .tablet {
+    object-fit: cover;
+    max-height: 300px; /* juster efter behov */
+    width: 100%;
+  }
+
+  .grid_5-3,
+  .grid_2-3,
+  .grid_3-2 {
+    gap: 2em;
+  }
+
+  /* Galleri */
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 5px;
+  }
+
+  img[src*="imgs/galleri/desktop-setup.webp"] {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  img[src*="imgs/galleri/intel-chip.webp"] {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  img[src*="imgs/galleri/macbook.webp"] {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  img[src*="imgs/galleri/code.webp"] {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+
+  img[src*="imgs/galleri/apple-84.webp"] {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  img[src*="imgs/galleri/keyboard.webp"] {
+    grid-column: 2/5;
+    grid-row: 3/4;
+  }
+
+  .grid_1-1-1-1 img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  /* Komponenter */
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col > :last-child {
+    margin-top: auto;
+  }
+  /* Text */
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
